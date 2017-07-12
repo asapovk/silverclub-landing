@@ -1,0 +1,190 @@
+
+.header
+  width 100%
+  background-color rgba(242, 242, 242, 0.76);
+  position absolute
+  height 50px
+  //border-radius 5px
+
+.header__logo
+  position absolute
+  //float left
+  display inline-block
+  margin-left 40px
+  margin-top 10px
+  img
+    width 100px
+    height 100px
+
+.header__contacts
+  position relative
+  display inline-block
+  float right
+  font-size 16px
+
+.header__contacts-phone
+  margin-top 10px
+  display inline-block
+  margin-right 25px
+  img
+    height 24px
+    width 24px
+    margin-right 15px
+
+.header__contacts-map
+  margin-top 10px
+  display inline-block
+  margin-right 25px
+  img
+    height 24px
+    width 24px
+    margin-right 15px
+/*  a
+    display inline-block
+    margin-right 25px
+    margin-top 10px
+    font-size 20px
+    min-width 180px
+    &:before
+      content ' '
+      display inline-block
+      height: 32px
+      width: 32px
+      background url(../img/img/signs.png) 0 0 no-repeat
+      margin-right 15px
+    &:hover
+      color red
+
+  span
+    display inline-block
+    margin-right 20px
+    margin-top 10px
+    font-size 20px
+    min-width 230px
+    &:before
+      content ' '
+      display inline-block
+      height: 35px
+      width: 35px
+      background url(../img/img/phone.png) 0 0 no-repeat
+      margin-right 15px
+*/
+.header__menu-wrap
+  display block
+  background-color rgba(242, 242, 242, 0.76)
+  position absolute
+  top 50px
+  width 100%
+  overflow hidden
+
+.header__menu
+  text-align justify
+  font-size 18px
+  display block
+  float right
+  li
+    display inline-block
+    min-width 100px
+  a
+    display block
+    line-height 30px
+    padding 0px 25px
+
+    &:active
+      color pink
+      background-color white
+    &:hover
+      color red
+
+
+.header__burger
+  display none
+  width 30px
+  height 30px
+  position relative
+  float right
+  margin-top 10px
+  margin-bottom 10px
+  margin-right 20px
+  background-color gray
+  border-radius 5px
+  cursor pointer
+  &.active
+    .header__burger-dash_top
+      transform rotate(-45deg)
+      top 14px
+      transition 0.5s
+    .header__burger-dash_bottom
+      transform rotate(45deg)
+      top 14px
+      transition 0.5s
+    .header__burger-dash_middle
+      opacity 0
+      transition 0.5s
+
+.header__burger-dash
+  display block
+  width 80%
+  left 10%
+  position absolute
+  height 3px
+  background-color white
+  border-radius 3px
+
+.header__burger-dash_top
+  top 6px
+  transition 0.5s
+
+.header__burger-dash_middle
+  top 14px
+  transition 0.5s
+
+.header__burger-dash_bottom
+  top 22px
+  transition 0.5s
+
+
+
+@media screen and (max-width 700px)
+    .header__burger
+      display inline-block
+    .header__menu
+      margin-top 40px
+      display none
+      transition 0.5s
+      &.show
+        display block
+        transition 0.5s
+      li
+        display block
+
+@media screen and (max-width 545px)
+  .header
+    height  100px
+  .header__contacts
+    //background-color rgba(242, 242, 242, 0.76)
+    max-width 230px
+  .header__logo
+    margin-left 10px
+  .header__menu-wrap
+    background-color  rgba(242, 242, 242, 0.0)
+  .header__menu-wrap li
+        background-color rgba(242, 242, 242, 0.76)
+  .header__menu
+    margin-top 50px
+@media screen and (max-width 339px)
+    .header__menu-wrap
+      background-color rgba(242, 242, 242, 0.76)
+      top 168px
+    .header__contacts
+      background-color rgba(242, 242, 242, 0.76)
+      margin-top 100px
+      width 100%
+      max-width 400px
+    .header__contacts-phone
+      margin-left 15px
+    .header__contacts-map
+      margin-left 15px
+    .header__logo
+      margin-left 30%
+      margin-top 0
