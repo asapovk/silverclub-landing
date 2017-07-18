@@ -2881,7 +2881,7 @@ html {
 }
 body {
   font-family: mainFont;
-  background-color: #808080;
+  background: url("../img/img/background-wall.jpg") repeat;
 }
 h1,
 h2,
